@@ -116,3 +116,7 @@ input{
 #password-login{
     margin-bottom: 1rem;
 }
+.wrong{
+    color:#ffffff;
+    display:none;
+}
