@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script>  
+    history.pushState(null, document.title, location.href);
+    window.addEventListener('popstate', function (event)
+    {
+    history.pushState(null, document.title, location.href);
+    });
+</script> 
 <html lang="en-us">
 
 <head>
@@ -6,6 +13,8 @@
     <link rel="stylesheet" href="./loginPage.css">
     <title>Secure health System</title>
 </head>
+
+
 
 <body>
     <header>

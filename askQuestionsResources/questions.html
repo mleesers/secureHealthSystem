@@ -25,15 +25,26 @@
                     <a href="../payBillResources/payBill.html">PayBill</a>
                 </li>
                 <li>
-                    <a href="../loginPageResources/loginPage.html">Logout</a>
+                    <a href="../loginPageResources/loginPage.html" id="logout">Logout</a>
                 </li>
+                <script>
+                    document.getElementById("logout").onclick = function(event){
+                        if(window.confirm("Are you sure you want to logout?" ) == true){
+                            console.log("logout successful")
+                        }else{
+                            event.preventDefault()
+                        }
+                    };
+               </script>
             </ul>
         </nav>
     </header>
-    <section class="input">
-        
+    <section id="questions">
+        <h1 id="message">Message System</h1>
+        <textarea id="" cols="100" rows="30" placeholder="Enter message"></textarea>
+        <a href="../index.html"><button id="submit">Send</button></a>
     </section>
-    
+    <script src="./askQuestions.js"></script>
 </body>
 
 </html>

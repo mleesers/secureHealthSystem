@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./testResults.css">
+    <link rel="stylesheet" href="./refill.css">
     <title>Secure health System</title>
 </head>
 
@@ -25,7 +25,7 @@
                     <a href="../payBillResources/payBill.html">PayBill</a>
                 </li>
                 <li>
-                    <a href="../loginPageResources/loginPage.html" id="logout">Logout</a>
+                    <a href="../loginPageResources/loginPage.html" id = "logout">Logout</a>
                 </li>
                 <script>
                     document.getElementById("logout").onclick = function(event){
@@ -39,38 +39,26 @@
             </ul>
         </nav>
     </header>
-    <section id="section1">
-        <table id="customers">
-            <tr>
-              <th>Test Dates</th>
-            </tr>
-            <tr>
-              <td id="date1">10/15/21</td>
-            </tr>
-            <tr>
-              <td id="date2">11/05/2021</td>
-            </tr>
-            <tr>
-              <td id="date3">01/11/2022</td>
-            </tr>
-            
-          </table>
-          
+    <section>
+
+        <article class="card">
+            <header class="cardHeader">
+                <h2 id="medication">Percocet</h2>
+            </header>    
+            <img src="./4785.webp">
+            <div class="content">
+                <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago. </p>
+            </div>
+                
+        </article>
+        
+        <div class="buttonHolder">
+            <a href="../index.html"><button id="submit">Submit</button></a>
+            <a href="../index.html"><button id="cancel">Cancel</button></a>
+        </div>
+        
     </section>
-    <section id="section2">
-        <table id="customers">
-            <tr>
-              <th>Test</th>
-              <th>Test Result</th>
-            </tr>
-            <tr>
-              <td id="test">Gohnorrea Test</td>
-              <td id="result">Positive</td>
-            </tr>
-          </table>
-          <a href="../index.html"><button id="close">Close</button></a>
-    </section>
-    <script src="./testResults.js"></script>
+    <script src="./requestRefills.js"></script>  
 </body>
 
 </html>

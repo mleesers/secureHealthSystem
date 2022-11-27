@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./testResults.css">
+    <link rel="stylesheet" href="./payBill.css">
     <title>Secure health System</title>
 </head>
 
@@ -25,13 +25,32 @@
                     <a href="../payBillResources/payBill.html">PayBill</a>
                 </li>
                 <li>
-                    <a href="../loginPageResources/loginPage.html">Logout</a>
+                    <a href="../loginPageResources/loginPage.html" id="logout">Logout</a>
                 </li>
+                <script>
+                    document.getElementById("logout").onclick = function(event){
+                        if(window.confirm("Are you sure you want to logout?" ) == true){
+                            console.log("logout successful")
+                        }else{
+                            event.preventDefault()
+                        }
+                    };
+               </script>
             </ul>
         </nav>
     </header>
     <section>
+        <article class="card">
+            <header class="cardHeader">
+                <h1 id="balance">$1096.35</h1>
+                <h2 id="balanceTitle">Current Balance</h2>
+            </header>  
+        </article>
         
+        <div class="buttonHolder">
+            <a href="./payment.html"><button id="submit">Pay Now</button></a>
+            <a href="../index.html"><button id="cancel">Cancel</button></a>
+        </div>
     </section>
 </body>
 

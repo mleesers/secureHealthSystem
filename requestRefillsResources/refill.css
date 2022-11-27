@@ -41,6 +41,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -50,21 +51,24 @@ section {
 
 .cardHeader{
     display: flex;
-    flex-direction: row-reverse;
     width:25rem;
     justify-content: center;  
     font-size: 25px;
 
 }
 .card {
-    margin-top: 10%;
+    margin-top: 8%;
     width:25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
+.card img {
+    object-fit: cover;
+    width: 25rem;
+    height: 15rem;
+}
 .content{
     background-color: #2a607c;
     color: #ffffff;
@@ -81,61 +85,4 @@ button{
     margin: 1rem;
     font-size: 15px;
     padding: 5px;
-}
-#paymentInfo{
-    width:45%;
-    margin-top: 5%;
-    display:flex;
-    flex-direction: row;
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid #2a607c;
-    border-radius: 3px;
-    justify-content: space-between;
-    text-align: left;
-}
-#billingInfo{
-    display: flex;
-    flex-direction: column;
-    width:25rem;
-    align-items: flex-start;
-}
-.title{
-    margin-bottom: 1rem;
-    font-size: 25px;
-}
-#cardInfo{
-    display: flex;
-    flex-direction: column;
-    width:25rem;
-    align-items: flex-start;
-}
-input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-label{
-    margin:3px;
-    vertical-align: middle;
-}
-.smallSection{
-    display: flex;
-    flex-direction: row;
-    text-align:center;
-}
-button{
-    width:10rem;
-    font-size:20px;
-    background-color: #2a607c;
-    color:#f2f2f2;
-    border-radius: 3px;
-    border-style: 1px solid black;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #4aa0cb;
 }
